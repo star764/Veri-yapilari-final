@@ -1,7 +1,8 @@
-Ferhat Karakartal
-2420161134
-https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1hO4dxgM
- 
+// İsim Soyisim: Ferhat Karakartal
+// Öğrenci Numarası: 2420161134
+// BTK Akademi Sertifika Linki:
+// https://raw.githubusercontent.com/star764/Veri-yapilari-final/main/BTK_Git_GitHub_Sertifika.pdf
+
 #include <stdio.h>
 
 void bubbleSort(int arr[], int n) {
