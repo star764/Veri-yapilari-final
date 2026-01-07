@@ -1,10 +1,11 @@
 // İsim Soyisim: Ferhat Karakartal
 // Öğrenci Numarası: 2420161134
-// BTK Akademi Sertifika Linki:
+// BTK Akademi Sertifika Bağlantısı:
 // https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1h04dxgM
 
 #include <stdio.h>
 
+// Baloncuk Sıralama (Bubble Sort)
 void bubbleSort(int arr[], int n) {
     int i, j, temp;
     for (i = 0; i < n - 1; i++) {
@@ -18,6 +19,7 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
+// İkili Arama (Binary Search)
 int binarySearch(int arr[], int n, int hedef) {
     int sol = 0, sag = n - 1;
 
