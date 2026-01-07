@@ -1,7 +1,7 @@
 // İsim Soyisim: Ferhat Karakartal
 // Öğrenci Numarası: 2420161134
 // BTK Akademi Sertifika Linki:
-https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1hO4dxgM
+// https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1h04dxgM
 
 #include <stdio.h>
 
@@ -12,23 +12,24 @@ void bubbleSort(int arr[], int n) {
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
-                arr
-                 [j + 1] = temp;
+                arr[j + 1] = temp;
             }
         }
     }
 }
 
-int binarySearch(int arr[], int n, int target) {
-    int left = 0, right = n - 1;
-    while (left <= right) {
-        int mid = (left + right) / 2;
-        if (arr[mid] == target)
-            return mid;
-        else if (arr[mid] < target)
-            left = mid + 1;
+int binarySearch(int arr[], int n, int hedef) {
+    int sol = 0, sag = n - 1;
+
+    while (sol <= sag) {
+        int orta = (sol + sag) / 2;
+
+        if (arr[orta] == hedef)
+            return orta;
+        else if (arr[orta] < hedef)
+            sol = orta + 1;
         else
-            right = mid - 1;
+            sag = orta - 1;
     }
     return -1;
 }
@@ -36,24 +37,25 @@ int binarySearch(int arr[], int n, int target) {
 int main() {
     int arr[] = {45, 12, 78, 34, 23, 56};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int target;
+    int hedef, i;
 
     bubbleSort(arr, n);
 
     printf("Siralanmis dizi:\n");
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
 
     printf("\nAranacak sayiyi girin: ");
-    scanf("%d", &target);
+    scanf("%d", &hedef);
 
-    int result = binarySearch(arr, n, target);
+    int sonuc = binarySearch(arr, n, hedef);
 
-    if (result != -1)
-        printf("Sayi bulundu. Indeks: %d\n", result);
+    if (sonuc != -1)
+        printf("Sayi bulundu. Indeks: %d\n", sonuc);
     else
         printf("Sayi bulunamadi.\n");
 
     return 0;
 }
+
