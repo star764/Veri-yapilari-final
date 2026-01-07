@@ -1,7 +1,7 @@
 // İsim Soyisim: Ferhat Karakartal
 // Öğrenci Numarası: 2420161134
 // BTK Akademi Sertifika Bağlantısı:
-// https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1h04dxgM
+https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=eK1hO4dxgM
 
 #include <stdio.h>
 
